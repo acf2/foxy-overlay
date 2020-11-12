@@ -25,6 +25,8 @@ CDEPEND="
 			>=media-sound/apulse-0.1.9
 		)
 	)
+	sys-devel/autoconf-wrapper
+	=sys-devel/autoconf-2.13-r1
 	>=dev-libs/nss-3.44.3
 	>=dev-libs/nspr-4.21
 	dev-libs/atk
