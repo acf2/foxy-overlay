@@ -130,8 +130,10 @@ src_prepare() {
 	# XXX: Very crude fix
 	sed -i third_party/rust/bytes/ci/before_deploy.sh \
 	-e 's/ -- -C lto/ --/'
-	sed -i config/makefiles/rust.mk \
-	-e 's/cargo_rustc_flags += -C lto/#& # Just nope, build fails/'
+	sed -i third_party/rust/bytes/.cargo-checksum.json \
+	sed -i 's/ea008e2c544482cba5b659c17887ccd5354779c629096f28e667d40391299cc5/baa303c12acfff1229976f7388025239064f4049b9930c24812f717d0436537a/'
+	#sed -i config/makefiles/rust.mk \
+	#-e 's/cargo_rustc_flags += -C lto/#& # Just nope, build fails/'
 
 	sed -i config/baseconfig.mk \
 	-e 's;$(libdir)/$(MOZ_APP_NAME)-$(MOZ_APP_VERSION);$(libdir)/$(MOZ_APP_NAME);g'
