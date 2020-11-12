@@ -44,7 +44,7 @@ CDEPEND="
 	startup-notification? ( >=x11-libs/startup-notification-0.8 )
 	>=x11-libs/pixman-0.19.2
 	>=virtual/libffi-3.0.10:=
-	virtual/ffmpeg
+	>=media-video/ffmpeg-4.3.1
 	x11-libs/libXt
 	>=media-libs/dav1d-0.3.0:=
 	>=media-libs/libaom-1.0.0:=
